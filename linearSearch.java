@@ -1,6 +1,6 @@
 public class linearSearch {
     static int LinSearch(int [] a,int target)
-   {int f=-1;
+   {
     if(a.length==0){
         return 0;
     }
