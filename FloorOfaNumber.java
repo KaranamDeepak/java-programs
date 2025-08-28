@@ -1,18 +1,21 @@
-
+//when coiditon is violated s=e+1;
 
 public class FloorOfaNumber {
+    
     static int  Floor(int [] arr,int target){
-int start=0;
-int n=arr.length;
-int end=n-1;
-int y=0;
+    int start=0;
+    int n=arr.length;
+    int end=n-1;
+    int y=0;
+    if(target<arr[0]){
+        return -1;}
+   
 while(start<=end){
     int mid=start+(end-start)/2;
     
-    if(arr[mid]==target){
+    if(arr[mid]==target) {
         return arr[mid];
-    }
-    else if(arr[mid]<target){
+    } else if(arr[mid]<target){
         start=mid+1;
 
     }
